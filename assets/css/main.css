@@ -1,0 +1,468 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.clearfix {
+  overflow: hidden;
+}
+
+/*Author: Hanlin Chong https://github.com/hanlinC*/
+
+/*
+  /-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\
+  Grid
+  \-/\-/\-/\-/\-/\-/\-/\-/\-/\-/\-/\-/\-/
+*/
+
+.container {
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 70%;
+
+  /*background-color: lightblue;*/
+}
+
+/*When device viewport greater than 769*/
+@media screen and (min-width:769px) {
+  .resource-description p {
+    width: 70%;
+  }
+}
+
+/*When device viewport lesser than 768*/
+@media screen and (max-width: 768px) {
+  .resource-description p {
+    width: 100%
+  }
+}
+
+/*
+  /-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\
+  Header
+  \-/\-/\-/\-/\-/\-/\-/\-/\-/\-/\-/\-/\-/
+*/
+
+header {
+  border-bottom: 1px solid lightgrey;
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 85%;
+}
+
+.logo {
+  width: 250px;
+  height: 162px;
+  background: url(../img/tomato-hat-logo.svg) no-repeat;
+  background-size: 100%;
+  margin: 4% auto 0% auto;
+}
+
+header h1,
+header h2 {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.75em;
+  font-family: 'Orbitron', sans-serif;
+}
+
+header h1 a {
+  color: black;
+  text-decoration: none;
+
+  transition:all .1s linear;
+  -o-transition:all .1s linear;
+  -moz-transition:all .1s linear;
+  -webkit-transition:all .1s linear;
+}
+
+header h1 a:hover {
+  color: crimson;
+}
+
+header h2 {
+  font-size: 1.125em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  margin: 1% 0% 2% 0%;
+}
+
+/*
+  /-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\
+  Navigation Menu
+  \-/\-/\-/\-/\-/\-/\-/\-/\-/\-/\-/\-/\-/
+*/
+
+nav {
+  /*float: left;*/
+  border-right: 1px solid lightgrey;
+}
+
+nav li {
+  margin: 35px 0; /*36.5% 0%*/
+}
+
+nav a {
+  font-size: 1.25em; /*20px*/
+  font-family: 'Roboto', sans-serif;
+  color: grey;
+  /*text-transform: uppercase;*/
+  text-decoration: none;
+  padding: 10px; /* 10% */
+  letter-spacing: 1px;
+}
+
+nav a:hover, .selected {
+  color: black;
+  border: 1px solid lightgrey;
+
+  border-radius: 12px;
+  -o-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+}
+
+/* phpacademy CSS Slide Out Navigation */
+/* http://codepen.io/anon/pen/bxCGv */
+.menu {
+  overflow-x: hidden;
+  position: relative;
+  left: 0; /*0%*/
+}
+
+.menu-open {
+  left: 160px; /*12%*/
+}
+
+.menu-open .menu-side {
+  left: 0; /*0%*/
+}
+
+.menu-side,
+.menu {
+  -webkit-transition: left 200ms ease;
+  -moz-transition: left 200ms ease;
+  -ms-transition: left 200ms ease;
+  -o-transition: left 200ms ease;
+  transition: left 200ms ease;
+}
+
+.menu-side {
+  color: white;
+  position: fixed;
+  top: 0%;
+  left: -136px; /*-10%*/
+  width: 96px; /*7.1%*/
+  height: 100%;
+  padding: 19px; /*1.4%*/
+}
+
+.menu-toggle {
+  text-decoration: none;
+  font-size: 4.125em; /*66px*/
+  color: darkgreen;
+  padding: 0px 16px; /*0% 1.2%*/
+  margin: 0 15px; /*0% 1.1%*/
+  position: absolute;
+  top: 0;
+
+  transition:all .2s linear;
+  -o-transition:all .2s linear;
+  -moz-transition:all .2s linear;
+  -webkit-transition:all .2s linear;
+}
+
+.menu-toggle:hover {
+  color: lightgreen;
+}
+
+/*
+  /-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\
+  Main Content
+  \-/\-/\-/\-/\-/\-/\-/\-/\-/\-/\-/\-/\-/
+*/
+
+.wrapper-logo-name {
+  display: block;
+  margin: 20px auto 0px auto;
+  padding: 20px 20px 10px 20px;
+  /*border-bottom: 1px solid lightgrey;*/
+  /*border-top: 1px solid lightgrey;*/
+  position: relative;
+}
+
+/*Resource Logo and Name*/
+.resource-logo-name {
+  display: block;
+}
+
+.resource-logo-name img {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 25px; /*25%*/
+  -o-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+}
+
+.resource-logo-name .img-long {
+  display: inline-block;
+  width: 100px;
+  height: 125px;
+  border-radius: 25px; /*25%*/
+  -o-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+}
+
+.resource-logo-name h2 {
+  display: inline-block;
+  position: absolute;
+  top: 55px;
+  left: 135px;
+}
+
+.resource-logo-name h2 a {
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: grey;
+}
+
+/*Resource Description*/
+.resource-description {
+  display: block;
+}
+
+.resource-description h3 {
+  display: inline-block;
+  font-size: 17px;
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  margin: 8px;
+  padding: 8px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.resource-description p {
+  display: block;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(98, 38, 38, 0.92);
+  line-height: 20px;
+  /*width: 70%*/
+}
+
+.resource-description p a {
+  text-decoration: none;
+  color: darkgreen;
+}
+
+.resource-description p a:hover {
+  color: lightgreen;
+}
+
+/*
+  /-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\
+  About
+  \-/\-/\-/\-/\-/\-/\-/\-/\-/\-/\-/\-/\-/
+*/
+
+.wrapper-about {
+  display: block;
+  margin: 20px auto 0px auto;
+  padding: 10px;
+}
+
+.wrapper-about h3 {
+  font-size: 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: grey;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.wrapper-about p {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(98, 38, 38, 0.92);
+  line-height: 18px;
+  text-align: center;
+}
+
+.wrapper-about p a {
+  text-decoration: none;
+  color: grey;
+}
+
+.wrapper-about p a:hover {
+  color: black;
+}
+
+.wrapper-about h4 {
+  font-size: 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: grey;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/*
+  /-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\
+  Button and Learn-More
+  \-/\-/\-/\-/\-/\-/\-/\-/\-/\-/\-/\-/\-/
+*/
+
+.wrapper-learn-more {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+}
+
+.learn-more {
+  display: inline-block;
+  float: left;
+  margin: 5px;
+  padding: 5px;
+  /*border: 1px solid lightgrey;*/
+
+  border-radius: 8px;
+  -o-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+}
+
+.learn-more button {
+  font-size: 1em; /*16px*/
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-decoration: none;
+  background-color: #5fcf80; /* #8FED8F */
+
+  cursor: pointer;
+  /*float: left;*/
+  /*display: block;*/
+  /*margin: 0 auto;*/
+  padding: 8px; /*0.85%*/
+  border: 1px solid lightgrey;
+
+  border-radius: 8px;
+  -o-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+
+  transition:all .2s linear;
+  -o-transition:all .2s linear;
+  -moz-transition:all .2s linear;
+  -webkit-transition:all .2s linear;
+}
+
+.learn-more button:hover {
+  background-color: #3ac162; /* #52E352 */
+}
+
+.learn-more button:focus {
+  outline: 0; /* removes blue border when clicked */
+}
+
+.learn-more span {
+  display: block;
+}
+
+.more-info {
+  text-decoration: none;
+  font-size: 14px; /*0.875em*/
+  font-family: 'Roboto', sans-serif;
+  color: grey;
+  float: left;
+  display: none;
+  margin: 10px 60px 10px 0; /* 10px 11px 10px 0 */
+}
+
+.more-info:hover {
+  color: black;
+}
+
+/*
+  /-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\
+  Footer
+  \-/\-/\-/\-/\-/\-/\-/\-/\-/\-/\-/\-/\-/
+*/
+
+footer {
+  border-top: 1px solid lightgrey;
+  margin: 45px auto 0 auto; /* 0 auto */
+  padding: 0 30px;
+  width: 85%;
+}
+
+footer p {
+  font-size: 0.875em;
+  font-family: 'Roboto', sans-serif;
+  color: grey;
+  margin: 1% 0% 1% 0%;
+  float: right;
+}
+
+footer a {
+  text-decoration: none;
+  color: grey;
+}
+
+footer a:hover {
+  color: black;
+}
+
+.license {
+  float: left;
+  margin: 1% 0% 1% 0%;
+}
