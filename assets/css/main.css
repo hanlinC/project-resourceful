@@ -71,12 +71,30 @@ table {
   .resource-description p {
     width: 70%;
   }
+
+  header,
+  footer {
+    width: 85%;
+  }
+
+  header h1 {
+    font-size: 2.75em;
+  }
 }
 
 /*When device viewport lesser than 768*/
 @media screen and (max-width: 768px) {
   .resource-description p {
     width: 100%
+  }
+
+  header,
+  footer {
+    width: 81%;
+  }
+
+  header h1 {
+    font-size: 2.65em;
   }
 }
 
@@ -90,7 +108,7 @@ header {
   border-bottom: 1px solid lightgrey;
   margin: 0 auto;
   padding: 0 30px;
-  width: 85%;
+  /*width: 85%;*/
 }
 
 .logo {
@@ -107,7 +125,7 @@ header h2 {
 }
 
 header h1 {
-  font-size: 2.75em;
+  /*font-size: 2.75em;*/
   font-family: 'Orbitron', sans-serif;
 }
 
@@ -442,7 +460,7 @@ footer {
   border-top: 1px solid lightgrey;
   margin: 45px auto 0 auto; /* 0 auto */
   padding: 0 30px;
-  width: 85%;
+  /*width: 85%;*/
 }
 
 footer p {
