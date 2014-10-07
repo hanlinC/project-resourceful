@@ -105,7 +105,7 @@ table {
 */
 
 header {
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #bdc3c7; /* lightgrey */
   margin: 0 auto;
   padding: 0 30px;
   /*width: 85%;*/
@@ -158,7 +158,7 @@ header h2 {
 
 nav {
   /*float: left;*/
-  border-right: 1px solid lightgrey;
+  border-right: 1px solid #bdc3c7; /* lightgrey */
 }
 
 nav li {
@@ -168,7 +168,7 @@ nav li {
 nav a {
   font-size: 1.25em; /*20px*/
   font-family: 'Roboto', sans-serif;
-  color: grey;
+  color: #7f8c8d;
   /*text-transform: uppercase;*/
   text-decoration: none;
   padding: 10px; /* 10% */
@@ -177,7 +177,7 @@ nav a {
 
 nav a:hover, .selected {
   color: black;
-  border: 1px solid lightgrey;
+  border: 1px solid #bdc3c7; /* lightgrey */
 
   border-radius: 12px;
   -o-border-radius: 12px;
@@ -186,7 +186,7 @@ nav a:hover, .selected {
 }
 
 /* phpacademy CSS Slide Out Navigation */
-/* http://codepen.io/anon/pen/bxCGv */
+/* http://codepen.io/hanlinC/pen/jczpx */
 .menu {
   overflow-x: hidden;
   position: relative;
@@ -291,7 +291,7 @@ nav a:hover, .selected {
   font-size: 25px;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
-  color: grey;
+  color: rgba(98, 38, 38, 0.92);
 }
 
 /*Resource Description*/
@@ -306,7 +306,7 @@ nav a:hover, .selected {
   text-transform: uppercase;
   margin: 8px;
   padding: 8px;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #bdc3c7; /* lightgrey */
 }
 
 .resource-description p {
@@ -343,7 +343,7 @@ nav a:hover, .selected {
   font-size: 25px;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
-  color: grey;
+  color: #7f8c8d;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -358,7 +358,7 @@ nav a:hover, .selected {
 
 .wrapper-about p a {
   text-decoration: none;
-  color: grey;
+  color: #7f8c8d;
 }
 
 .wrapper-about p a:hover {
@@ -369,7 +369,7 @@ nav a:hover, .selected {
   font-size: 25px;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
-  color: grey;
+  color: #7f8c8d;
   text-align: center;
   margin-top: 10px;
 }
@@ -383,13 +383,13 @@ nav a:hover, .selected {
 .wrapper-learn-more {
   display: inline-block;
   width: 100%;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #bdc3c7; /* lightgrey */
 }
 
 .learn-more {
   display: inline-block;
   float: left;
-  margin: 5px;
+  margin: 5px 5px 10px 5px;
   padding: 5px;
   /*border: 1px solid lightgrey;*/
 
@@ -401,22 +401,24 @@ nav a:hover, .selected {
 
 .learn-more button {
   font-size: 1em; /*16px*/
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  text-decoration: none;
-  background-color: #5fcf80; /* #8FED8F */
-
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Ropa Sans', sans-serif;
+  text-transform: uppercase;
+  /*color: white;*/
+  color: #3ac162;
+  background-color: white; /* #5fcf80 #8FED8F */
+  border: 1px solid #5fcf80; /* lightgrey */
+  padding: 10px 20px; /* 8px 0.85%*/
   cursor: pointer;
+
   /*float: left;*/
   /*display: block;*/
   /*margin: 0 auto;*/
-  padding: 8px; /*0.85%*/
-  border: 1px solid lightgrey;
 
-  border-radius: 8px;
+/*  border-radius: 8px;
   -o-border-radius: 8px;
   -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
+  -webkit-border-radius: 8px;*/
 
   transition:all .2s linear;
   -o-transition:all .2s linear;
@@ -425,7 +427,8 @@ nav a:hover, .selected {
 }
 
 .learn-more button:hover {
-  background-color: #3ac162; /* #52E352 */
+  color: white;
+  background-color: #5fcf80; /* #3ac162 #52E352 */
 }
 
 .learn-more button:focus {
@@ -440,7 +443,7 @@ nav a:hover, .selected {
   text-decoration: none;
   font-size: 14px; /*0.875em*/
   font-family: 'Roboto', sans-serif;
-  color: grey;
+  color: #7f8c8d;
   float: left;
   display: none;
   margin: 10px 60px 10px 0; /* 10px 11px 10px 0 */
@@ -457,7 +460,7 @@ nav a:hover, .selected {
 */
 
 footer {
-  border-top: 1px solid lightgrey;
+  border-top: 1px solid #bdc3c7; /* lightgrey */
   margin: 45px auto 0 auto; /* 0 auto */
   padding: 0 30px;
   /*width: 85%;*/
@@ -466,14 +469,14 @@ footer {
 footer p {
   font-size: 0.875em;
   font-family: 'Roboto', sans-serif;
-  color: grey;
+  color: #7f8c8d;
   margin: 1% 0% 1% 0%;
   float: right;
 }
 
 footer a {
   text-decoration: none;
-  color: grey;
+  color: #7f8c8d;
 }
 
 footer a:hover {

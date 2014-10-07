@@ -8,52 +8,12 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
    width="1530"
    height="990"
    id="svg2">
   <defs
-     id="defs4">
-    <linearGradient
-       id="linearGradient3042">
-      <stop
-         id="stop3044"
-         style="stop-color:#aa0000;stop-opacity:1"
-         offset="0" />
-      <stop
-         id="stop3046"
-         style="stop-color:#aa0000;stop-opacity:0"
-         offset="1" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient3032">
-      <stop
-         id="stop3034"
-         style="stop-color:#aa0000;stop-opacity:1"
-         offset="0" />
-      <stop
-         id="stop3036"
-         style="stop-color:#aa0000;stop-opacity:0"
-         offset="1" />
-    </linearGradient>
-    <linearGradient
-       x1="107.5"
-       y1="813"
-       x2="108.375"
-       y2="809.125"
-       id="linearGradient3038"
-       xlink:href="#linearGradient3032"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       x1="1362.2412"
-       y1="818.17303"
-       x2="1360.4734"
-       y2="808.45032"
-       id="linearGradient3048"
-       xlink:href="#linearGradient3042"
-       gradientUnits="userSpaceOnUse" />
-  </defs>
+     id="defs4" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -99,19 +59,5 @@
        transform="translate(0,62.362194)"
        id="path3835"
        style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <path
-       d="m 47.664621,860.91304 c -7.954171,4.08827 -13.134681,8.12499 -13.139743,13.63081 -0.03691,40.14018 321.290082,72.25313 715.402522,72.25313 394.1124,0 696.3142,-31.95982 710.172,-69.63205 2.0782,-5.64945 -1.3922,-10.19407 -12.4368,-16.09148 -71.7261,32.4198 -360.0699,58.41816 -700.04988,58.41816 -342.33125,0 -630.69633,-25.82107 -699.948099,-58.57857 z"
-       id="path3833-1"
-       style="fill:#aa0000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
-    <path
-       d="m 51.869022,796.52824 103.322548,22.61585 c 0.50137,1.65363 2.20528,3.18867 4.7841,4.43736 1.83931,0.89061 3.19507,1.32322 4.56963,2.05738 -39.15165,-4.84977 -78.234819,-10.75275 -120.025292,-25.38824 2.438308,-1.39394 4.889902,-2.61992 7.349014,-3.72235 z"
-       transform="translate(0,62.362194)"
-       id="path2990"
-       style="fill:url(#linearGradient3038);fill-opacity:1;fill-rule:nonzero;stroke:none" />
-    <path
-       d="m 1225.3023,837.63841 c 2.3727,-0.26843 5.4063,-0.68195 8.8931,-1.09108 3.4002,-0.39896 7.1388,-0.96037 10.9918,-1.51056 6.2541,-1.01082 13.1376,-1.9559 19.0998,-3.038 9.5831,-1.81128 18.1718,-3.87094 23.3474,-5.55491 3.6442,-1.1857 3.9996,-1.43369 4.8348,-1.8013 1.9481,-0.77809 4.7187,-2.22433 6.1385,-3.95758 0.54,-0.6591 0.2019,-0.75034 1.4014,-0.80375 l 139.4654,-24.91793 c 1.3549,0.53646 2.6085,1.08051 3.8137,1.6325 1.6434,0.72146 3.3098,1.53966 4.6749,2.27382 -25.1504,12.75707 -71.2956,20.46294 -104.8548,25.45324 -0.2274,0.68224 -32.178,4.95097 -53.6776,6.69423 -12.9687,2.83402 -59.2802,7.93253 -64.1284,6.62132 z"
-       transform="translate(0,62.362194)"
-       id="path3040"
-       style="fill:url(#linearGradient3048);fill-opacity:1;fill-rule:nonzero;stroke:none" />
   </g>
 </svg>
