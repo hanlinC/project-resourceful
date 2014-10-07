@@ -203,6 +203,18 @@ nav a:hover, .selected {
 
 .menu-side,
 .menu {
+/*  -webkit-transform: translatez(0);
+  -moz-transform: translatez(0);
+  -ms-transform: translatez(0);
+  -o-transform: translatez(0);
+  transform: translatez(0);*/
+
+/*  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);*/
+
   -webkit-transition: left 200ms ease;
   -moz-transition: left 200ms ease;
   -ms-transition: left 200ms ease;
@@ -419,6 +431,18 @@ nav a:hover, .selected {
   -o-border-radius: 8px;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;*/
+
+  -webkit-transform: translatez(0);
+  -moz-transform: translatez(0);
+  -ms-transform: translatez(0);
+  -o-transform: translatez(0);
+  transform: translatez(0);
+
+/*  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);*/
 
   transition:all .2s linear;
   -o-transition:all .2s linear;
